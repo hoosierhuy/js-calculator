@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script type="text/javascript" src="js/calculator.js"></script>
+  <title>JS Calculator</title>
+</head>
+
+<body>
+  <main>
+    <input class="calc" type="text" readonly size="18" id="calcDisplay">
+
+    <section class="calcButtons">
+      <button class="button calcFunction" onclick="Calculator.clearMem();">MC</button>
+      <button class="button calcFunction" onclick="Calculator.recallMem();">MR</button>
+      <button class="button calcFunction" onclick="Calculator.saveMem();">M+</button>
+      <button class="button operator" onclick="Calculator.type('/')">/</button>
+      <button class="button number" onclick="Calculator.type('7')">7</button>
+      <button class="button number" onclick="Calculator.type('8')">8</button>
+      <button class="button number" onclick="Calculator.type('9')">9</button>
+      <button class="button operator" onclick="Calculator.type('*')">×</button>
+      <button class="button number" onclick="Calculator.type('4')">4</button>
+      <button class="button number" onclick="Calculator.type('5')">5</button>
+      <button class="button number" onclick="Calculator.type('6')">6</button>
+      <button class="button operator" onclick="Calculator.type('-')">-</button>
+      <button class="button number" onclick="Calculator.type('1')">1</button>
+      <button class="button number" onclick="Calculator.type('2')">2</button>
+      <button class="button number" onclick="Calculator.type('3')">3</button>
+      <button class="button operator" onclick="Calculator.type('+')">+</button>
+      <button class="button number" onclick="Calculator.type('0')">0</button>
+      <button class="button number" onclick="Calculator.type('.')">.</button>
+      <button class="button calcFunction" onclick="Calculator.display('')">AC</button>
+      <button class="button operator" onclick="Calculator.evaluate()">=</button>
+    </section>
+  </main>
+</body>
+
+</html>
